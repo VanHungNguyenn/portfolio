@@ -1,0 +1,21 @@
+<svg width="800" height="450" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="450" fill="#112240"/>
+  <rect x="40" y="40" width="200" height="370" rx="16" fill="#0a192f" stroke="#1d3461" stroke-width="1.5"/>
+  <rect x="60" y="80" width="160" height="24" rx="4" fill="#1d3461"/>
+  <rect x="60" y="116" width="120" height="12" rx="3" fill="#233554"/>
+  <rect x="60" y="148" width="70" height="70" rx="8" fill="#1d3461"/>
+  <rect x="140" y="148" width="70" height="70" rx="8" fill="#1d3461"/>
+  <rect x="60" y="228" width="70" height="70" rx="8" fill="#1d3461"/>
+  <rect x="140" y="228" width="70" height="70" rx="8" fill="#1d3461"/>
+  <rect x="60" y="320" width="160" height="40" rx="8" fill="#64ffda" opacity="0.2"/>
+  <text x="140" y="345" text-anchor="middle" fill="#64ffda" font-family="monospace" font-size="13">Add to Cart</text>
+  <rect x="280" y="40" width="480" height="370" rx="12" fill="#0a192f" stroke="#1d3461" stroke-width="1.5"/>
+  <rect x="310" y="70" width="200" height="20" rx="4" fill="#1d3461"/>
+  <rect x="310" y="110" width="420" height="1" fill="#1d3461"/>
+  <rect x="310" y="130" width="420" height="60" rx="6" fill="#1d3461" opacity="0.5"/>
+  <rect x="310" y="200" width="420" height="60" rx="6" fill="#1d3461" opacity="0.5"/>
+  <rect x="310" y="270" width="420" height="60" rx="6" fill="#1d3461" opacity="0.5"/>
+  <rect x="310" y="350" width="120" height="36" rx="6" fill="#64ffda" opacity="0.15"/>
+  <text x="370" y="373" text-anchor="middle" fill="#64ffda" font-family="monospace" font-size="12">Confirm</text>
+  <text x="580" y="373" text-anchor="middle" fill="#8892b0" font-family="monospace" font-size="12">¥ 2,480</text>
+</svg>

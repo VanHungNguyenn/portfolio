@@ -1,0 +1,75 @@
+[
+  {
+    "id": "PRJ-001",
+    "slug": "tablet-ordering-system",
+    "title": "Tablet Ordering System",
+    "description": "A tablet-based ordering system for restaurant customers, supporting dynamic menu configuration and complex ordering flows with real-time validation.",
+    "year": "2024",
+    "tech": ["React.js", "TypeScript", "Redux", "REST API"],
+    "overview": "A tablet-based ordering system deployed in Anrakutei restaurants, enabling customers to browse dynamic menus, customize orders, and submit them directly from their table. The system handles complex menu hierarchies, real-time validation, and cart state synchronization with backend services.",
+    "problem": "The restaurant needed a customer-facing ordering system that could handle multi-level menu configurations (categories, subcategories, options, add-ons) with complex business rules — time-based menu availability, item dependencies, quantity constraints, and dynamic pricing. The ordering flow had to feel instant on tablet devices despite heavy validation logic running on every interaction.",
+    "solution": "Built a multi-level menu configuration system with Redux managing the full ordering state tree. Implemented a validation engine that runs business rules on every cart mutation without blocking the UI. Designed a data transformation layer between the frontend cart state and backend API contracts to ensure consistency across the ordering pipeline.",
+    "highlights": [
+      "Developed multi-level menu configuration and ordering flows using React.js, TypeScript, and Redux",
+      "Implemented complex validation and business logic for ordering constraints (time-based availability, item dependencies, quantity limits)",
+      "Integrated cart state with backend APIs through a data transformation layer ensuring consistency",
+      "Improved UI performance in high-interaction scenarios by minimizing re-renders and optimizing state updates"
+    ],
+    "images": ["/projects/tablet-ordering.svg"]
+  },
+  {
+    "id": "PRJ-002",
+    "slug": "staff-scheduling-system",
+    "title": "Staff Scheduling System",
+    "description": "A web-based staff scheduling system with drag-and-drop interactions and real-time business rule validation for in-store HR management.",
+    "year": "2024",
+    "tech": ["React.js", "TypeScript", "Drag & Drop", "REST API"],
+    "overview": "A scheduling board for Anrakutei store managers to assign employees to shifts using drag-and-drop interactions. The system enforces complex business rules in real-time — role constraints, working-hour limits, and conflict prevention — while maintaining smooth UI performance during heavy drag interactions.",
+    "problem": "Store managers were using spreadsheets to schedule staff, leading to frequent conflicts (double-booking, overtime violations, role mismatches). The scheduling logic involved overlapping constraints: employees have different roles, maximum weekly hours, mandatory rest periods, and availability windows. Building a UI that lets managers drag-and-drop assignments while validating all these rules in real-time was the core challenge.",
+    "solution": "Built a drag-and-drop scheduling board that validates every drop target against the full constraint set before allowing placement. Designed a data transformation layer that converts flat API responses into the hierarchical structure needed for the scheduling grid. Optimized rendering so that dragging an assignment doesn't trigger re-renders across the entire board.",
+    "highlights": [
+      "Built drag-and-drop scheduling board using React.js and TypeScript with complex business rule enforcement",
+      "Implemented validation logic for staff assignment — role constraints, working-hour limits, and conflict prevention",
+      "Designed data transformation between API responses and hierarchical scheduling structures",
+      "Optimized performance for heavy UI interactions by minimizing re-renders and improving data handling"
+    ],
+    "images": ["/projects/staff-scheduling.svg"]
+  },
+  {
+    "id": "PRJ-003",
+    "slug": "loyalty-checkin-app",
+    "title": "Anrakutei Mobile App",
+    "description": "A mobile application supporting customer authentication, reward systems, QR check-in, and real-time notifications with offline capabilities.",
+    "year": "2024",
+    "tech": ["React Native", "TypeScript", "QR Code", "Geolocation"],
+    "overview": "A customer-facing mobile app for Anrakutei's loyalty program. Supports stamp card rewards with animations, QR code check-in with geolocation validation, push notifications, and offline-first data storage. Built with React Native to serve both iOS and Android from a single codebase.",
+    "problem": "The loyalty program needed a mobile app that works reliably in restaurants where connectivity is inconsistent. Customers needed to check in via QR codes (with fraud prevention — no scanning from outside the restaurant), collect reward stamps, and receive real-time notifications. The app had to handle complex async flows: token refresh, race conditions between multiple API calls, and offline data sync when connectivity resumes.",
+    "solution": "Built a state-driven architecture where each feature (check-in, rewards, notifications) manages its own async lifecycle. Implemented QR check-in with dual validation (QR code + geolocation proximity). Designed an offline-first data layer that queues operations locally and syncs when online, with conflict resolution for stale data.",
+    "highlights": [
+      "Built complex state-driven features including stamp card rewards, animations, and notification handling",
+      "Developed QR code check-in flow with geolocation validation and duplicate scan prevention",
+      "Designed data fetching and API integration patterns with token management and error handling",
+      "Improved app reliability by handling async state, race conditions, and offline data storage"
+    ],
+    "images": ["/projects/loyalty-app.svg"]
+  },
+  {
+    "id": "PRJ-004",
+    "slug": "sms-management-system",
+    "title": "SMS Management System",
+    "description": "A web-based system for managing master data, exporting reports, and executing batch data operations with schema-based validation.",
+    "year": "2023",
+    "tech": ["React.js", "TypeScript", "React Hook Form", "Zod"],
+    "overview": "An internal management system for handling master data operations at scale — batch create, update, and delete with schema-based validation, configurable report exports, and type-safe API integration. Built to replace manual spreadsheet-based workflows with a structured, validated UI.",
+    "problem": "Operations teams were managing master data through spreadsheets and manual API calls, leading to data inconsistencies, validation errors caught only in production, and no audit trail. Batch operations (importing hundreds of records) had no validation feedback until the server rejected the entire batch, forcing teams to hunt for the problematic rows manually.",
+    "solution": "Built a form-driven management UI using React Hook Form and Zod for schema-based validation. Every field validates against the same schema used by the API, so errors surface immediately in the form. Batch operations validate row-by-row with clear error indicators. Designed configurable export workflows that let teams generate reports with custom parameters.",
+    "highlights": [
+      "Built dynamic form-based UIs for master data management with batch create, update, and delete operations",
+      "Implemented schema-based validation and form state management using React Hook Form and Zod",
+      "Designed data transformation and API integration with type-safe validation and consistent data mapping",
+      "Developed export and data processing workflows with configurable parameters and file generation",
+      "Optimized performance for large datasets using memoization and efficient state handling"
+    ],
+    "images": ["/projects/sms-management.svg"]
+  }
+]

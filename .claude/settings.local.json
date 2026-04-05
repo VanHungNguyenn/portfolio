@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python .claude/skills/ui-ux-pro-max/scripts/search.py \"layout responsive form hover transition\" --stack nextjs)",
+      "Bash(python .claude/skills/ui-ux-pro-max/scripts/search.py \"portfolio professional light minimal\" --domain color -n 5)",
+      "Bash(pnpm build:*)",
+      "Bash(python .claude/skills/ui-ux-pro-max/scripts/search.py \"portfolio engineer developer creative unique modern\" --design-system -p \"Hung Portfolio v2\")",
+      "Bash(python .claude/skills/ui-ux-pro-max/scripts/search.py \"glassmorphism neobrutalism aurora gradient\" --domain style -n 6)",
+      "Bash(python .claude/skills/ui-ux-pro-max/scripts/search.py \"dark premium glassmorphism aurora\" --domain color -n 5)",
+      "Bash(python .claude/skills/ui-ux-pro-max/scripts/search.py \"modern technical geometric bold\" --domain typography -n 5)",
+      "Bash(node -e \"try { require\\('next/font/google'\\); console.log\\('module exists'\\); } catch\\(e\\) { console.log\\(e.message\\); }\")",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Bash(mkdir -p d:/project/cv-project/public/icons)",
+      "Bash(curl -sO \"https://svgl.app/library/react_dark.svg\")",
+      "Bash(curl -sO \"https://svgl.app/library/typescript.svg\")",
+      "Bash(curl -sO \"https://svgl.app/library/javascript.svg\")",
+      "Bash(curl -sO \"https://svgl.app/library/nextjs_icon_dark.svg\")",
+      "Bash(curl -sO \"https://svgl.app/library/css.svg\")",
+      "Bash(curl -sO \"https://svgl.app/library/tailwindcss.svg\")",
+      "Bash(curl -sO \"https://svgl.app/library/materialui.svg\")",
+      "Bash(curl -so \"antdesign.svg\" \"https://svgl.app/library/ant-design-dark-theme.svg\")",
+      "Bash(curl -sO \"https://svgl.app/library/bootstrap.svg\")",
+      "Bash(xxd)"
+    ]
+  }
+}

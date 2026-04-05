@@ -1,0 +1,28 @@
+[
+  {
+    "role": "Fullstack Developer",
+    "company": "Anrakutei Vietnam",
+    "period": "05/2024 – Present",
+    "current": true,
+    "tech": ["React.js", "TypeScript", "Redux", "React Native"],
+    "points": [
+      "Built ordering and scheduling systems using React.js, TypeScript, and Redux",
+      "Implemented complex business logic with multi-level state management, validation, and real-time constraint handling",
+      "Designed data transformation between frontend state and backend APIs to ensure consistency",
+      "Optimized frontend performance for high-interaction UI, improving responsiveness and reducing re-renders"
+    ]
+  },
+  {
+    "role": "Frontend Developer",
+    "company": "Upgo Solutions",
+    "period": "09/2020 – 04/2024",
+    "current": false,
+    "tech": ["React.js", "JavaScript", "REST API", "CSS"],
+    "points": [
+      "Developed responsive web interfaces using React.js, ensuring compatibility across devices and browsers",
+      "Built and maintained admin dashboard features for internal products",
+      "Integrated APIs and handled data flow between frontend and backend systems",
+      "Fixed bugs and improved existing features to enhance system stability"
+    ]
+  }
+]

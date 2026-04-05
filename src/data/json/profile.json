@@ -1,0 +1,17 @@
+{
+  "name": "Nguyen Van Hung",
+  "role": "Frontend Developer",
+  "bio": "I build scalable, high-performance web applications with React.js and Next.js. Strong in UI architecture, complex business logic, and performance optimization.",
+  "about": [
+    "Frontend Developer with 5+ years of experience building production systems with React.js, Next.js, and TypeScript. I focus on complex state management, performance optimization, and translating business logic into reliable, maintainable interfaces.",
+    "Currently at Anrakutei Vietnam, I build ordering and scheduling systems that handle multi-level state management, real-time constraint validation, and heavy UI interactions."
+  ],
+  "email": "vanhungnguyenbku@gmail.com",
+  "phone": "(+84) 332 305 444",
+  "linkedin": "https://linkedin.com/in/ng-van-hung",
+  "github": "https://github.com/vanhungnguyenn",
+  "school": "Ho Chi Minh City University of Technology",
+  "degree": "Bachelor of Engineering in Electronics and Telecommunications",
+  "schoolYears": "2015 — 2020",
+  "cvUrl": "/NGUYEN_VAN_HUNG_CV_2026.pdf"
+}

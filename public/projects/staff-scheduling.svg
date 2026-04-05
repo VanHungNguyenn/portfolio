@@ -1,0 +1,36 @@
+<svg width="800" height="450" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="450" fill="#112240"/>
+  <rect x="40" y="40" width="720" height="370" rx="12" fill="#0a192f" stroke="#1d3461" stroke-width="1.5"/>
+  <rect x="60" y="60" width="140" height="20" rx="4" fill="#1d3461"/>
+  <rect x="60" y="100" width="680" height="1" fill="#1d3461"/>
+  <!-- Header row -->
+  <text x="80" y="128" fill="#8892b0" font-family="monospace" font-size="11">Staff</text>
+  <text x="200" y="128" fill="#8892b0" font-family="monospace" font-size="11">Mon</text>
+  <text x="310" y="128" fill="#8892b0" font-family="monospace" font-size="11">Tue</text>
+  <text x="420" y="128" fill="#8892b0" font-family="monospace" font-size="11">Wed</text>
+  <text x="530" y="128" fill="#8892b0" font-family="monospace" font-size="11">Thu</text>
+  <text x="640" y="128" fill="#8892b0" font-family="monospace" font-size="11">Fri</text>
+  <rect x="60" y="140" width="680" height="1" fill="#1d3461"/>
+  <!-- Row 1 -->
+  <rect x="80" y="155" width="60" height="12" rx="3" fill="#233554"/>
+  <rect x="185" y="150" width="90" height="32" rx="6" fill="#64ffda" opacity="0.15"/>
+  <rect x="295" y="150" width="90" height="32" rx="6" fill="#64ffda" opacity="0.15"/>
+  <rect x="515" y="150" width="90" height="32" rx="6" fill="#64ffda" opacity="0.15"/>
+  <!-- Row 2 -->
+  <rect x="80" y="205" width="60" height="12" rx="3" fill="#233554"/>
+  <rect x="295" y="200" width="90" height="32" rx="6" fill="#1d3461"/>
+  <rect x="405" y="200" width="90" height="32" rx="6" fill="#1d3461"/>
+  <rect x="625" y="200" width="90" height="32" rx="6" fill="#1d3461"/>
+  <!-- Row 3 -->
+  <rect x="80" y="255" width="60" height="12" rx="3" fill="#233554"/>
+  <rect x="185" y="250" width="90" height="32" rx="6" fill="#64ffda" opacity="0.1"/>
+  <rect x="405" y="250" width="90" height="32" rx="6" fill="#64ffda" opacity="0.1"/>
+  <rect x="515" y="250" width="90" height="32" rx="6" fill="#64ffda" opacity="0.1"/>
+  <!-- Dragging indicator -->
+  <rect x="400" y="300" width="100" height="36" rx="8" fill="#64ffda" opacity="0.2" stroke="#64ffda" stroke-width="1" stroke-dasharray="4"/>
+  <text x="450" y="323" text-anchor="middle" fill="#64ffda" font-family="monospace" font-size="10">Dragging...</text>
+  <!-- Row 4 -->
+  <rect x="80" y="345" width="60" height="12" rx="3" fill="#233554"/>
+  <rect x="185" y="340" width="90" height="32" rx="6" fill="#1d3461"/>
+  <rect x="515" y="340" width="90" height="32" rx="6" fill="#1d3461"/>
+</svg>

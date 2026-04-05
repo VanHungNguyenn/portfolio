@@ -1,0 +1,6 @@
+{
+  "languages": ["React.js", "Next.js", "TypeScript", "JavaScript", "Vue.js", "React Native"],
+  "styling": ["Tailwind CSS", "Material UI", "Ant Design", "Bootstrap", "SASS"],
+  "tools": ["Git", "Docker", "Linux", "macOS", "draw.io", "Notion"],
+  "state": ["Redux", "Zustand"]
+}
