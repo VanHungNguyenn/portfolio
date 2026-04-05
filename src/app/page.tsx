@@ -8,7 +8,6 @@ import {
 	getProjects,
 	getSkills,
 } from '@/data/projects'
-import Image from 'next/image'
 import Link from 'next/link'
 
 export default function HomePage() {
@@ -76,8 +75,9 @@ export default function HomePage() {
 							<SectionHeading>Education</SectionHeading>
 							<div className='group relative -mx-4 grid rounded-lg p-4 transition-all duration-300 ease-in-out hover:bg-slate-300/5 hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] hover:drop-shadow-lg sm:grid-cols-8 sm:gap-8 md:gap-4'>
 								<div className='mb-2 mt-1 sm:col-span-2'>
-									<Image
-										src='/school-logo.svg'
+									{/* eslint-disable-next-line @next/next/no-img-element */}
+									<img
+										src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/school-logo.svg`}
 										alt='School logo'
 										width={60}
 										height={60}

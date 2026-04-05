@@ -1,4 +1,4 @@
-import Image from "next/image";
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
 const techMap: Record<string, { label: string; icon: string }> = {
   "React.js": { label: "React", icon: "/icons/react_dark.svg" },
@@ -37,8 +37,9 @@ export function TechTag({ name }: TechTagProps) {
 
   return (
     <span className="inline-flex items-center gap-1.5 rounded-full border border-teal/20 bg-teal/10 px-3 py-1.5 text-xs font-medium text-teal">
-      <Image
-        src={tech.icon}
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        src={`${basePath}${tech.icon}`}
         alt={tech.label}
         width={14}
         height={14}

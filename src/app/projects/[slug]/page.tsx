@@ -1,7 +1,6 @@
 import { getAllProjectSlugs, getProject } from '@/data/projects'
 import { Spotlight } from '@/components/spotlight'
 import { TechTag } from '@/components/tech-icons'
-import Image from 'next/image'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 
@@ -52,8 +51,9 @@ export default async function ProjectPage({
 					<div className='mb-10 space-y-4'>
 						{project.images.map((src, i) => (
 							<div key={i} className='overflow-hidden rounded-lg border border-slate-200/10'>
-								<Image
-									src={src}
+								{/* eslint-disable-next-line @next/next/no-img-element */}
+								<img
+									src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}${src}`}
 									alt={`${project.title} preview ${i + 1}`}
 									width={800}
 									height={450}
