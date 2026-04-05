@@ -1,11 +1,7 @@
-import fs from "fs";
-import path from "path";
-
-const JSON_DIR = path.join(process.cwd(), "src/data/json");
-
-function read<T>(file: string): T {
-  return JSON.parse(fs.readFileSync(path.join(JSON_DIR, file), "utf-8"));
-}
+import profileJson from "./json/profile.json";
+import projectsJson from "./json/projects.json";
+import experiencesJson from "./json/experiences.json";
+import skillsJson from "./json/skills.json";
 
 export interface Project {
   id: string;
@@ -46,26 +42,20 @@ export interface Profile {
   cvUrl: string;
 }
 
-export function getProfile(): Profile {
-  return read<Profile>("profile.json");
-}
+export const profile: Profile = profileJson;
+export const projects: Project[] = projectsJson;
+export const experiences: Experience[] = experiencesJson;
+export const skills = skillsJson;
 
-export function getProjects(): Project[] {
-  return read<Project[]>("projects.json");
-}
-
-export function getExperiences(): Experience[] {
-  return read<Experience[]>("experiences.json");
-}
-
-export function getSkills() {
-  return read<{ languages: string[]; styling: string[]; tools: string[]; state: string[] }>("skills.json");
-}
+export function getProfile(): Profile { return profile; }
+export function getProjects(): Project[] { return projects; }
+export function getExperiences(): Experience[] { return experiences; }
+export function getSkills() { return skills; }
 
 export function getProject(slug: string): Project | undefined {
-  return getProjects().find((p) => p.slug === slug);
+  return projects.find((p) => p.slug === slug);
 }
 
 export function getAllProjectSlugs(): string[] {
-  return getProjects().map((p) => p.slug);
+  return projects.map((p) => p.slug);
 }
